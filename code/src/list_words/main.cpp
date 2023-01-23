@@ -9,8 +9,8 @@
 ///             to programming" provided by the Faculty of Computer Science
 ///             at the Higher School of Economics.
 ///
-/// Reads a string containing spaces and outputs individual words of the string
-/// one word per a line.
+/// Read a string containing spaces and output individual words of the string
+/// one word per line.
 ///
 ////////////////////////////////////////////////////////////////////////////////
 

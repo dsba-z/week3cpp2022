@@ -23,7 +23,7 @@
 #include <iostream>
 #include <cmath>            // HINT: library for some math functions
 
-// HINT: use the using statement in make it shorter refererring to std::cout
+// HINT: use the using statement in make it shorter referring to std::cout
 // and std::cin.
 
 int main()

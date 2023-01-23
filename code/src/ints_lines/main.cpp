@@ -14,7 +14,7 @@
 /// one. Each string consists of a sequence of integers separated by spaces.
 /// Neither the number of strings, nor the number of integers are known
 /// in advance. The program sums numbers in a single line and prints the sum to
-/// the standard output (cout), until the first empty line goes.
+/// the standard output (cout), until the first empty line appears.
 ///
 ////////////////////////////////////////////////////////////////////////////////
 
