@@ -25,9 +25,25 @@
 
 // HINT: use the using statement in make it shorter referring to std::cout
 // and std::cin.
+using std::cin;
+using std::cout;
 
 int main()
 {
+    int numberOfPairs;
+    cin >> numberOfPairs;
+    double total = 0;
+    for (int i = 0; i < numberOfPairs; ++i)
+    {
+        double x;
+        double y;
+        
+        cin >> x;
+        cin >> y;
+        total += std::pow(x, y);
+    }
+
+    cout << total / numberOfPairs << std::endl;
     // TODO:
     return 0;
 }

@@ -15,9 +15,23 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
+#include <sstream>
 #include <string>
 
 int main()
 {    
+
+    std::string stringBuffer;
+    std::getline(std::cin, stringBuffer);
+    std::stringstream ss(stringBuffer);
+
+    std::string wordBuffer;
+    while (ss >> wordBuffer)
+    {
+
+    }
+
+    std::cout << wordBuffer;
+
     return 0;
 }

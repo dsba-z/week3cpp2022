@@ -35,5 +35,14 @@
 
 int main()
 {
+
+    std::string numberString = "123";
+
+    int number = std::stoi(numberString);
+
+    int x = 135125;
+
+    std::string newString = std::to_string(x);
+
     return 0;
 }

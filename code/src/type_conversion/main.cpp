@@ -16,17 +16,38 @@
 /// 4. Multiplies the result by 2.
 /// 5. Outputs the resulting number.
 /// 
-/// Use stringstream for type converstion between numbers and strings.
+/// Use stringstream for type conversion between numbers and strings.
 /// (Additional) Use a debugger to check that at each step the strings and
 /// numbers hold the correct values.
 ///
 ////////////////////////////////////////////////////////////////////////////////
-
+// 1 2 3
+// 2 4 6
+// 246
+// 492
 
 #include <iostream>
+#include <sstream>
 #include <string>
 
 int main()
 {
+    std::stringstream ss;
+    int x;
+    int y;
+    int z;
+
+    std::cin >> x >> y >> z;
+    x *= 2;
+    y *= 2;
+    z *= 2;
+    ss << x << y << z;
+
+    int total;
+    ss >> total;
+    total *= 2;
+
+    std::cout << total << std::endl;
+
     return 0;
 }

@@ -25,16 +25,44 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
+#include <fstream>
 
+double calcSumFromStream(std::istream& in)
+{
+// floating point numbers from it
+// until the end of line
+    double number;
+    std::string buffer;
+    std::getline(in, buffer);
+    
+    double sum = 0;
+    std::stringstream sstr(buffer);
+    while (sstr >> number)
+    {
+        sum += number;
+    }
+    return sum;
+}
 
-// TODO: Provide a declaration (a prototype) of the method calcSumFromStream() here.
 
 // TODO: Provide a definition of the method sumLines() here.
+double sumLines(std::istream& in, std::ostream& out)
+{
+    while(in.good())
+    {
+        double lineSum = calcSumFromStream(in);
+        out << lineSum << std::endl;
+    }
+    
+}
 
 int main()
 {
-
+    std::ifstream inFile("../data/problem8_files/inp.txt");
+    sumLines(inFile, std::cout);
     return 0;
 }
+
 
 // TODO: Implement calcSumFromStream() method here.

@@ -19,18 +19,37 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <fstream>
 
 using std::cout;
 using std::cin;
 
-
 // TODO: Provide a declaration (a prototype) of the method calcSumFromStream() here.
+double calcSumFromStream(std::istream& in);
 
 
 int main()
 {
-    // TODO: Implement the main method here.
+    std::ifstream inFile("problem7_input.txt");
+    double total = calcSumFromStream(inFile);
+    cout << total << std::endl;
     return 0;
 }
 
 // TODO: Implement calcSumFromStream() method here.
+double calcSumFromStream(std::istream& in)
+{
+// floating point numbers from it
+// until the end of line
+    double number;
+    std::string buffer;
+    std::getline(in, buffer);
+    
+    double sum = 0;
+    std::stringstream sstr(buffer);
+    while (sstr >> number)
+    {
+        sum += number;
+    }
+    return sum;
+}

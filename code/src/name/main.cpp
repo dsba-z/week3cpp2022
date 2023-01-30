@@ -21,8 +21,22 @@
 #include <iostream>
 #include <string>
 
+using std::cin;
+using std::cout;
+using std::string;
+using std::endl;
 
 int main()
 {
+    string firstName;
+    string lastName;
+
+    cin >> firstName >> lastName;
+
+    cout << firstName << " " << lastName << endl;
+    cout << lastName << ", " << firstName << endl;
+
     return 0;
 }
+// First Middle
+// Last

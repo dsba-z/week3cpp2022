@@ -23,9 +23,28 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
+#include <sstream>
 #include <string>
 
 int main()
 {
+    std::stringstream ss;
+
+    ss << 123;
+    ss << "    sdgsdg";
+
+    std::string example("aso gih odi");
+
+    ss << example;
+
+    std::string outputString;
+    int x;
+
+    ss >> x;
+
+   
+    std::cout << x * 2;
+    
+
     return 0;
 }
