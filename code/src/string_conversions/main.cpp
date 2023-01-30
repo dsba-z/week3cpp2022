@@ -35,5 +35,17 @@
 
 int main()
 {
+
+    int i = 124123 + 325123;
+    std::string numberAsAString = std::to_string(i);
+    std::cout << numberAsAString << std::endl;
+
+    std::string example2 = "123.214" + std::string("32452345");
+
+    double x = std::stod(example2);
+
+    std::cout << x << std::endl;
+    std::cout << example2 << std::endl;
+
     return 0;
 }

@@ -21,12 +21,24 @@
 /// numbers hold the correct values.
 ///
 ////////////////////////////////////////////////////////////////////////////////
-
-
+// 1 2 3
+// 2 4 6
+// 246
+// 492
 #include <iostream>
 #include <string>
+#include <sstream>
 
-int main()
-{
+int main() {
+
+    std::stringstream num_buffer;
+
+    int x;
+    std::string s;
+    while (std::cin >> x) {
+        num_buffer << x * 2;
+    }
+    num_buffer >> x;
+    std::cout << x * 2;
     return 0;
 }

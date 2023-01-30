@@ -23,9 +23,22 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
+#include <sstream>
 #include <string>
 
 int main()
 {
+
+    std::string buffer;
+    std::getline(std::cin, buffer);
+
+    std::stringstream ss(buffer);
+    // ss << 123 << 5215.51235 << "    asdasfsa";
+
+    double x;
+    ss >> x;
+    std::cout << ss.str() << std::endl;
+    std::cout << x << std::endl;
+
     return 0;
 }

@@ -21,16 +21,21 @@
 
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 
 using std::cout;
 using std::cin;
 
 //// TODO: Implement printDblArray() method here.
-//void printDblArray(double arr[], size_t size)
-//{
-
-//}
+void printDblArray(double arr[], size_t size)
+{
+    for (int i = 0; i < size; ++i)
+    {
+        cout << arr[i] << std::endl;
+    }
+    // {1, 2, 6, 1.251}
+}
 
 
 //// TODO: Implement calcAvg() method here.
@@ -44,6 +49,8 @@ using std::cin;
 
 int main()
 {   
+    double exampleArray[1000] = {1, 2, 6, 6541.25798791};
+    printDblArray(exampleArray, 4);
     // TODO: Implement the main method here.
     // Create an array
     // Calculate its mean value

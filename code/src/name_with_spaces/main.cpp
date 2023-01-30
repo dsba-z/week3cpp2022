@@ -16,8 +16,24 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
 
 int main()
-{    
+{
+    std::string fullName;
+    std::string lastName;
+
+    std::getline(std::cin, fullName);
+
+    std::stringstream ss(fullName);
+
+    while (ss >> lastName)
+    {
+
+    }
+
+    std::cout << fullName << std::endl;
+    std::cout << lastName << std::endl;
+    
     return 0;
 }

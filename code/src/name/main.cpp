@@ -24,5 +24,11 @@
 
 int main()
 {
+    std::string firstName;
+    std::string lastName;
+    std::cin >> firstName >> lastName;
+    std::cout << firstName << " " << lastName << std::endl;
+    std::cout << lastName << ", " << firstName << std::endl;
+    
     return 0;
 }
